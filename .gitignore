@@ -39,3 +39,33 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# app data (uploads, database, exports)
+/data/
+/services/cutout/.venv/
+__pycache__/
+
+/services/upscale/bin/
+/services/upscale/esrgan.zip
+/services/cutout/*.onnx
+# YOLO11-seg (people.py), exported once from Ultralytics' yolo11l-seg.pt: see the header of people.py
+/services/cutout/models/
+/services/imagegen/.venv/
+/services/imagegen/models/
+
+# brainstorm mockups
+.superpowers/
+/services/balltrack/.venv/
+/services/balltrack/*.pt
+/services/balltrack/pip.log
+/.next-prod/
+
+# private material (client videos, test renders, planning notes, local tooling)
+/Videos/
+/pressphoto/
+/triptych/
+/undefined/
+/--/
+/docs/
+/.claude/
+/services/interp/bin/
